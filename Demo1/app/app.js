@@ -1,6 +1,6 @@
 let myapp = angular.module('myapp',[]);
 
-myapp.config(function() {
+/*myapp.config(function() {
     //before run
     
 });
@@ -14,3 +14,4 @@ myapp.run(function() {
 myapp.controller
 
 
+*/
