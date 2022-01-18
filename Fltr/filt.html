@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myapp">
+<head>
+    
+    <title>Filter</title>
+    <script src="app\lib\angular.min.js"></script>
+    <script src="app\app.js"></script>
+</head>
+<body>
+    <div ng-controller="myappcontroller">
+        <p>{{institure.name}}</p>
+        <ul>
+            <li ng-repeat="institutes in institute | orderBy:'name'">{{institutes.name +" "+ institutes.course}}</li>
+            
+        </ul>
+    </div>
+</body>
+</html>
