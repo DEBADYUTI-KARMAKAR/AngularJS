@@ -1,16 +1,11 @@
 let myapp = angular.module('myapp',[]);
 
-myapp.config(function() {
-    //before run
-    
+myapp.controller('myappcontroller', function($scope){
+
+    $scope.name = "Debadyuti";
+
+    $scope.data = ['Ram','Sham','Deb'];
+
+
 });
-
-
-myapp.run(function() {
-    //after run
-    
-});
-
-myapp.controller
-
 
