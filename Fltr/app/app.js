@@ -5,15 +5,18 @@ myapp.controller('myappcontroller',['$scope', function($scope){
     $scope.institute =[ 
         {
             name:"Debadyuti",
-            course:"Node Js"
+            course:"Node Js",
+            fees:100
         },
         {
             name:"Ayan",
-            course:"Java"
+            course:"Java",
+            fees:80
         },
         {
             name:"Saheb",
-            course:"Python"
+            course:"Python",
+            fees:56
         }
 
     ];
