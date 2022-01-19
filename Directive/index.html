@@ -19,7 +19,8 @@
             <ul>
                 <li ng-repeat="institutes in institute | orderBy: order | filter:s" ng-show="institutes.available"><!--nh-hide also availevel-->
                     <h3>{{institutes.name +"-> "+institutes.course | uppercase}} </h3>
-                    <span> {{institutes.fees | currency}} </span>
+                    <div class="remove" ng-click="removedata(institutes)">X</div>
+                    <span > {{institutes.fees | currency}} </span>
                 </li>
                 
             </ul>
