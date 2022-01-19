@@ -1,4 +1,17 @@
-let myapp = angular.module('myapp',[]);
+let myapp = angular.module('myapp',['ngRoute']);
+
+myapp.config(['$routeProvider', function($routeProvider){
+    $routeProvider
+        .when('/home',{
+            templateUrl:'views/home.html'
+        })
+        .when('/directory',{
+            templateUrl: 'views/directory.html',
+            controller: 'myappcontroller'
+        }).otherwise({
+            redirectTo: '/home'
+        })
+}]);
 myapp.controller('myappcontroller',['$scope', function($scope){
 
     $scope.removedata = function(institutes){
