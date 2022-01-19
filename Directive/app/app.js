@@ -20,6 +20,18 @@ myapp.controller('myappcontroller',['$scope', function($scope){
             course:"Python",
             fees:56,
             available: false
+        },
+        {
+            name:"Parthib",
+            course:"C",
+            fees:40,
+            available: true
+        },
+        {
+            name:"Rajdeep",
+            course:"C++",
+            fees:60,
+            available: true
         }
 
     ];

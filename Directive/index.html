@@ -13,9 +13,11 @@
     <div class="content">
 
         <div ng-controller="myappcontroller">
+            <button ng-click="order = 'name'">Order By Name</button>
+            <button ng-click="order = 'course'">Order By Course</button>
             <input type="text" ng-model="s" placeholder="search students" >
             <ul>
-                <li ng-repeat="institutes in institute | orderBy:'name' | filter:s" ng-show="institutes.available"><!--nh-hide also availevel-->
+                <li ng-repeat="institutes in institute | orderBy: order | filter:s" ng-show="institutes.available"><!--nh-hide also availevel-->
                     {{institutes.name +" "+ institutes.course | uppercase}} - {{institutes.fees | currency}}
                 </li>
                 
