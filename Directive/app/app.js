@@ -22,36 +22,40 @@ myapp.controller('myappcontroller',['$scope', function($scope){
             name:"Debadyuti",
             course:"Node Js",
             fees:100,
-            
-            available: true
+            available: true,
+            pic:"content/img/1.jpg"
         },
         {
             name:"Ayan",
             course:"Java",
             fees:80,
             
-            available: true
+            available: true,
+            pic:"content/img/1.jpg"
         },
         {
             name:"Saheb",
             course:"Python",
             fees:56,
     
-            available: false
+            available: false,
+            pic:"content/img/1.jpg"
         },
         {
             name:"Parthib",
             course:"C",
             fees:40,
             
-            available: true
+            available: true,
+            pic:"content/img/1.jpg"
         },
         {
             name:"Rajdeep",
             course:"C++",
             fees:60,
             
-            available: true
+            available: true,
+            pic:"content/img/1.jpg"
         }
 
     ];
