@@ -6,6 +6,17 @@ myapp.controller('myappcontroller',['$scope', function($scope){
         let removedata = $scope.institute.indexOf(institutes);
         $scope.institute.splice(removedata,1);
     }
+    $scope.addStudent = function(){
+        $scope.institute.push({
+            name: $scope.student.name,
+            course:$scope.student.course,
+            fees:parseInt($scope.student.fees),
+            available:true
+        });
+        $scope.student.name="";
+        $scope.student.course="";
+        $scope.student.fees="";
+    };
     $scope.institute =[ 
         {
             name:"Debadyuti",
