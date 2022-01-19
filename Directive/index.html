@@ -15,7 +15,7 @@
         <div ng-controller="myappcontroller">
             <input type="text" ng-model="s" placeholder="search students" >
             <ul>
-                <li ng-repeat="institutes in institute | orderBy:'name' | filter:s" ng-show="institutes.available">
+                <li ng-repeat="institutes in institute | orderBy:'name' | filter:s" ng-show="institutes.available"><!--nh-hide also availevel-->
                     {{institutes.name +" "+ institutes.course | uppercase}} - {{institutes.fees | currency}}
                 </li>
                 
