@@ -18,7 +18,8 @@
             <input type="text" ng-model="s" placeholder="search students" >
             <ul>
                 <li ng-repeat="institutes in institute | orderBy: order | filter:s" ng-show="institutes.available"><!--nh-hide also availevel-->
-                    <img ng-src="{{institutes.pic}}" style="margin: -12px 10px 0 0; float: left; width: 50px;">
+                    <img ng-src="{{institutes.pic}}" style="margin: -12px 10px 0 0; float: left; width: 50px;"
+                    ng-show="institutes.pic"/>
                     <h3>{{institutes.name +"-> "+institutes.course | uppercase}} </h3>
                     <div class="remove" ng-click="removedata(institutes)">X</div>
                     <span > {{institutes.fees | currency}} </span>
