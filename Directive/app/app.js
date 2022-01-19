@@ -6,17 +6,20 @@ myapp.controller('myappcontroller',['$scope', function($scope){
         {
             name:"Debadyuti",
             course:"Node Js",
-            fees:100
+            fees:100,
+            available: true
         },
         {
             name:"Ayan",
             course:"Java",
-            fees:80
+            fees:80,
+            available: true
         },
         {
             name:"Saheb",
             course:"Python",
-            fees:56
+            fees:56,
+            available: false
         }
 
     ];
