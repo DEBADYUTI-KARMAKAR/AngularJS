@@ -23,7 +23,7 @@ body{
   }
   
   #menu-bar{
-    background: crimson;
+    background: rgb(7, 6, 6);
     color: #fff;
     padding: 10px;
   }
@@ -125,7 +125,7 @@ body{
     width: 18px;
     text-align: center;
     border-radius: 20px;
-    color: crimson;
+    color: rgb(246, 6, 54);
     cursor: pointer;
     margin-left: 10px;
   }
@@ -148,5 +148,17 @@ main.ng-enter.ng-enter-active {
 #students-list li.ng-enter.ng-enter-active{
   
   opacity:1;
-  transform: translateY(0);
+  transform: translateX(0);
 }
+
+#students-list li.ng-leave{
+  transition:  0.2s linear all;
+  opacity:1;
+  transform: translateX(0);
+}
+#students-list li.ng-leave.ng-leave-active{
+  
+  opacity:0;
+  transform: translateX(-100%);
+}
+
