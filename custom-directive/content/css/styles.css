@@ -124,3 +124,7 @@ body{
     cursor: pointer;
     margin-left: 10px;
   }
+  #img{
+    justify-content: center;
+    width: x;
+  }
