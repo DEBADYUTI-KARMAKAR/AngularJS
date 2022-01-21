@@ -4,7 +4,7 @@
         <button ng-click="order = 'name'">Order By Name</button>
         <button ng-click="order = 'course'">Order By Course</button>
         <input type="text" ng-model="s" placeholder="search students" >
-        <ul>
+        <ul id="students-list">
             <li ng-repeat="institutes in institute | orderBy: order | filter:s" ng-show="institutes.available"><!--nh-hide also availevel-->
                 <img ng-src="{{institutes.pic}}" style="margin: -12px 10px 0 0; float: left; width: 50px;"
                 ng-show="institutes.pic"/>
