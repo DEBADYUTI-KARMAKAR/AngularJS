@@ -47,6 +47,10 @@ myapp.controller('myappcontroller',['$scope','$http', function($scope,$http){
         $scope.student.fees="";
     };
 
+    $scope.removeAll = function(){
+        $scope.institute = [];
+    }
+
     $http.get('data/institute.json')
     .then(function(response){
 
