@@ -22,7 +22,9 @@ myapp.directive('randomStudent', [function () {
             title:'='
         }, 
          template: '<img ng-src="{{institute[0].pic}}">',
-         controller: function($scope){}
+         controller: function($scope){
+             
+         }
     };
 }] )
 myapp.controller('myappcontroller',['$scope','$http', function($scope,$http){
