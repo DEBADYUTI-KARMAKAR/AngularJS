@@ -21,9 +21,9 @@ myapp.directive('randomStudent', [function () {
             institute: '=',
             title:'='
         }, 
-         template: '<img ng-src="{{institute[0].pic}}">',
+         template: '<img ng-src="{{institute[random].pic}}">',
          controller: function($scope){
-             
+             $scope.random = Math.floor(Math.random() * 4);
          }
     };
 }] )
