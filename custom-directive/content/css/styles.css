@@ -112,6 +112,11 @@ body{
     display: block;
     margin: 15px auto;
   }
+  .content img{
+    width: 150px;
+    display: block;
+    margin: 15px auto;
+  }
   
   .remove{
     float: right;
@@ -124,7 +129,4 @@ body{
     cursor: pointer;
     margin-left: 10px;
   }
-  #img{
-    justify-content: center;
-    width: x;
-  }
+  
