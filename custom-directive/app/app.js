@@ -14,6 +14,17 @@ myapp.config(['$routeProvider', function($routeProvider){
             redirectTo: '/home'
         })
 }]);
+myapp.directive('randomStudent', [function () {
+    return {
+        restrict: 'E',
+        scope: {
+            institute: '=',
+            title:'='
+        }, 
+         template: '<img ng-src="{{institute[0].pic}}">',
+         controller: function($scope){}
+    };
+}] )
 myapp.controller('myappcontroller',['$scope','$http', function($scope,$http){
 
     $scope.removedata = function(institutes){
