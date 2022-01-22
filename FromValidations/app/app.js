@@ -7,6 +7,11 @@ myapp.config(['$routeProvider', function($routeProvider){
             controller: 'myappcontroller'
             
         })
+        .when('/contact',{
+            templateUrl:'views/contact.html',
+            
+            
+        })
         .when('/directory',{
             templateUrl: 'views/directory.html',
             controller: 'myappcontroller'

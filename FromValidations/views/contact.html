@@ -1,8 +1,10 @@
 <div class="content">
+    
     <form name="contactForm" novalidate>
-        <input type="text" name="name" placeholder="name" id="">
-        <input type="email" name="Email" placeholder="Email" id="">
-        <textarea name="message" placeholder="Your Message" ></textarea>
+        <input type="text" name="name" placeholder="name" id="" ng-model="contact.name" ng-required="true">
+        <input type="email" name="Email" placeholder="Email" ng-model="contact.email" ng-required="true">
+        <textarea name="message"  placeholder="Your Message" ng-model="contact.message" ng-required="true"></textarea>
+        
         <input type="submit" value="Send" />
     </form>
 </div>
