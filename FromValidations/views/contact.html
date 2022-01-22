@@ -4,7 +4,18 @@
         <input type="text" name="name" placeholder="name" id="" ng-model="contact.name" ng-required="true">
         <input type="email" name="Email" placeholder="Email" ng-model="contact.email" ng-required="true">
         <textarea name="message"  placeholder="Your Message" ng-model="contact.message" ng-required="true"></textarea>
-        
+ <!--
+
+     <span>
+         $pristine - {{contactForm.name.$pristine}}
+         $dirty - {{contactForm.name.$dirty}}
+         $untouched - {{contactForm.name.$untouched}}
+         $touched - {{contactForm.name.$touched}}
+         $invalid - {{contactForm.name.$invalid}}
+         $valid - {{contactForm.name.$valid}}
+         
+        </span>
+    --> 
         <input type="submit" value="Send" />
     </form>
 </div>
