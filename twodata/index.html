@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myapp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Aptech</title>
+    <script src="app\lib\angular.min.js" ></script>
+    <script src="app\app.js"></script>
+    <center>
+ 
+        <div aling="center">All User</a></div>
+            <h1 style="color: red"><u>Welcome to Aptech</u></h1>
+            <form method="post" enctype="multipart/form-data">
+            <table border="1">
+            <tr>
+                    <td colspan="2" align="center"><b>User Registration:</b></td>
+                </tr>
+                <tr>
+                    <td><b>Name:</b></td>
+                    <td><input type="text"  ng-model="name"></td>
+
+                    <td> Your Name is :{{name}}</td>
+                </tr>
+                <tr>
+                    <td><b>Email:</b></td>
+                    
+                    <td><input type="email" ng-model="email"></td>
+                    <td> Your Email is :{{email}}</td>
+                </tr>
+                <tr>
+                    <td><b>Password:</b></td>
+                    
+                    <td><input type="password" ng-model="pass"</td>
+                    <td>Your Name is :{{pass}}</td>
+                </tr>
+                <tr>
+                    <td><b>Gender:</b></td>
+                    <td><input type="radio" ng-model="gender" value="Male" checked="checked">Male
+                    <input type="radio" ng-model="gender" value="Female">Female</td>
+                    <td>Your Gender is :{{gender}}
+                        </td>
+                </tr>
+                <tr>
+                    <td><b>Date of Birth:</b></td>
+                    <td><input type="date" ng-model="dob"></td>
+                    <td>Your Date of Birth :{{dob}}</td>
+                </tr>
+                <tr>
+                    <td><b>Address:</b></td>
+                    <td><textarea cols="30" rows="2" ng-model="address"></textarea></td>
+                    <td>Your Addrees is :{{address}}</td>
+                </tr>
+         
+                <tr>
+                    <td><b>course</b></td>
+                    <td><select ng-model="course">
+                        <option>--select--</option>
+                        <option value="btech">btech</option>
+                        <option value="mtech">mtech</option>
+                        <option value="bca">bca</option>
+                        <option value="mca">mca</option>
+                    </select></td>
+                   <td> Your Course is :{{course}}</td>
+                </tr>
+         
+                <tr>
+                    <td><b>Language:</b></td>
+                    <div ng-controller="myappcontroller">
+
+                        <li ng-repeat="datas in data">{{datas.language}}</li>
+                        <tr ng-repeat="datas in data">
+                            <input type="checkbox"  ng-model="data" value="hindi" >Hindi
+                            <td >Your Language is :{{datas}}</td>
+                        </tr>
+                        </div>
+             
+                </tr>
+                
+                <tr>
+                    <td><b>Upload Image</b></td>
+            
+                    <td><input type="file" name="img" ng-model="image" required></td>
+                    {{img}}
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <input type="submit" name="sub" value="Submit">
+                        <input type="reset" name="reset" value="Reset">
+                    </td>
+                </tr>
+            </table>
+            </form>
+        </center>
+</head>
+<body>
+    
+</body>
+</html>
